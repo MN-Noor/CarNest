@@ -15,7 +15,7 @@ int y=100;
     frame.setLayout(null);
     frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); 
     frame.setBounds(0,0, 1500,1400);
-    carImage = new ImageIcon("background.jpg");
+    carImage = new ImageIcon("src/background.jpg");
      backgroundLabel = new JLabel(carImage);
     frame.setContentPane(backgroundLabel);
     JButton jl[][]=new JButton[4][6];
@@ -29,11 +29,11 @@ int y=100;
      sl[i][j]=new Slot();
      if(sl[xi][xj].isavailable==true)
         {
-            jl[i][j].setIcon(new ImageIcon("nove.jpg"));
+            jl[i][j].setIcon(new ImageIcon("src/nove.jpg"));
         }
      else
         {
-            jl[i][j].setIcon(new ImageIcon("pcar.jpg"));
+            jl[i][j].setIcon(new ImageIcon("src/pcar.jpg"));
         }
      
      jl[i][j].setBounds(x, y, 64, 117); 
@@ -43,10 +43,10 @@ int y=100;
     {
         if(sl[xi][xj].isavailable==true)
         {sl[xi][xj].showInfo();
-        jl[xi][xj].setIcon(new ImageIcon("pcar.jpg"));}
+        jl[xi][xj].setIcon(new ImageIcon("src/pcar.jpg"));}
         else{
         sl[xi][xj].showInfo();
-        jl[xi][xj].setIcon(new ImageIcon("nove.jpg"));
+        jl[xi][xj].setIcon(new ImageIcon("src/nove.jpg"));
         }
     }
     });

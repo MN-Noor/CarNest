@@ -30,12 +30,12 @@ public class Slot extends JFrame {
     void showInfo()
 	{
         // Create the main window
-        frame = new JFrame("Car Info");
+        frame = new JFrame("src/Car Info");
         frame.setSize(1113, 534);;
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         // Set the background image
-         carImage = new ImageIcon("menu.png");
+         carImage = new ImageIcon("src/menu.png");
          backgroundLabel = new JLabel(carImage);
         frame.setContentPane(backgroundLabel);
         if(isavailable==true)
